@@ -5,7 +5,9 @@
 	<title>My portfolio</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="temp.css">
+	<meta property="og:image" content="img\titlebar_img.jpg" /> <!-- image link, make sure it's jpg -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="icon" href="img\d_logo.png">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 	<script src="https://kit.fontawesome.com/22ad683826.js" crossorigin="anonymous"></script>
@@ -23,13 +25,14 @@
 				<li><a href="#portfolio" class="btn"><i class="fa-solid fa-file"></i> Portfolio</a></li>
 				<li><a href="#contact" class="btn"><i class="fa-solid fa-phone"></i> Contact</a></li>
 
-				<a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
-				<a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/dave-dhruvin-b78528244/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: blue;"></i></a>
+				<a href="https://www.instagram.com/dhruvindave_" target="_blank"><i class="fa-brands fa-instagram"
+						style="color: rgb(247, 12, 192);"></i></a>
 			</ul>
 		</nav>
 		<div class="profile">
 			<p>Dhruvin</p>
-			<img src="img\d_logo.png" alt="profile">
+			<img src="img\titlebar_img.jpg" alt="profile">
 		</div>
 	</div>
 	<!-----------------------------------------------------Navbar ended------------------------------------------------->
@@ -53,7 +56,6 @@
 			<section class="about" id="about">
 				<h1 style="padding: 81px 2px 17px 0px;">About</h1>
 				<div id="pic">
-					<img src="img\my_img (1).png">
 					<div class="about-intro">
 						<h2><u>Dhruvin Dave</u></h2>
 						<p>I am Dhruvin Dave. I am 18 years old. I am from Rajkot. I am good in studies. I have
@@ -66,7 +68,10 @@
 							I've learned a lot from mistakes made by others so I can avoid them.
 						</p>
 					</div>
+					<div class="img">
+					<img src="img\dhruvin.jpg">
 				</div>
+			</div>
 				<div cv-dwn>
 					<a href="https://drive.google.com/file/d/12FjP_arE55IqzZHhr08bBKbv1S17dDLp/view?usp=sharing"
 						target="_blank">
@@ -90,35 +95,64 @@
 					Improving soft skills of team which helps in communication and documentation.
 					Providing inputs to the upper level for improvement of the process.</p>
 
-				<div class="seprater">
-					<div class="part1">
-						<div class="skills-item"><strong>Html:</strong><br>
-							<div class="skills seventy-five hundrade"></div>
+
+				<div class="row">
+					<div class="subrow1">
+						<div class="skill">
+							<div class="skills-item"><strong>Html</strong></div>
+							<div class="skill-graph">
+								<div class="skill-bar eighty-five"></div>
+							</div>
 						</div>
-						<div class="skills-item"><strong>Css:</strong><br>
-							<div class="skills fifty-five hundrade"></div>
+						<div class="skill">
+							<div class="skills-item"><strong>CSS</strong></div>
+							<div class="skill-graph">
+								<div class="skill-bar seventy-five"></div>
+							</div>
 						</div>
-						<div class="skills-item"><strong>Javascript:</strong><br>
-							<div class="skills t5 hundrade"></div>
+						<div class="skill">
+							<div class="skills-item"><strong>C Language</strong></div>
+							<div class="skill-graph">
+								<div class="skill-bar ninety-five"></div>
+							</div>
 						</div>
-						<div class="skills-item"><strong>C language:</strong><br>
-							<div class="skills eighty-five hundrade"></div>
+						<div class="skill">
+							<div class="skills-item"><strong>Javascript</strong></div>
+							<div class="skill-graph">
+								<div class="skill-bar thirty-five"></div>
+							</div>
 						</div>
 					</div>
-					<div class="part2">
-						<div class="skills-item"><strong>Time Management:</strong><br>
-							<div class="skills seventy-five hundrade"></div>
+
+					<div class="subrow2">
+						<div class="skill">
+							<div class="skills-item"><strong>Team Management</strong></div>
+							<div class="skill-graph">
+								<div class="skill-bar seventy-five"></div>
+							</div>
 						</div>
-						<div class="skills-item"><strong>Team work:</strong><br>
-							<div class="skills fifty-five hundrade"></div>
+
+						<div class="skill">
+							<div class="skills-item"><strong>Time Management</strong></div>
+							<div class="skill-graph">
+								<div class="skill-bar sixty-five"></div>
+							</div>
 						</div>
-						<div class="skills-item"><strong>Communication skill:</strong><br>
-							<div class="skills t5 hundrade"></div>
+
+						<div class="skill">
+							<div class="skills-item"><strong>Project Management</strong></div>
+							<div class="skill-graph">
+								<div class="skill-bar eighty-five"></div>
+							</div>
 						</div>
-						<div class="skills-item"><strong>Project Management:</strong><br>
-							<div class="skills eighty-five hundrade"></div>
+						<div class="skill">
+							<div class="skills-item"><strong>Communication Skill</strong></div>
+							<div class="skill-graph">
+								<div class="skill-bar sixty-five"></div>
+							</div>
 						</div>
 					</div>
+
 				</div>
 			</section>
 			<!-----------------------------------------------------Skills ended------------------------------------------------->
