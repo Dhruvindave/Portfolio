@@ -169,7 +169,7 @@ nav {
 .about h1 {
   font-size: 60px;
   text-align: center;
-  margin-right: 61pc;
+  margin-right: 77pc;
   margin-bottom: 12px;
   font-weight: 900;
   font-family: cursive;
@@ -263,7 +263,7 @@ nav {
   font-size: 60px;
   margin-top: 55px;
     text-align: center;
-    margin-right: 61pc;
+    margin-right: 77pc;
     margin-bottom: 12px;
     font-weight: 900;
     font-family: cursive;
@@ -401,6 +401,7 @@ nav {
   background-size: cover;
   background-attachment: fixed;
 }
+
 
 .contact-content {
   max-width: 800px;
