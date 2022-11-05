@@ -25,7 +25,8 @@
 				<li><a href="#portfolio" class="btn"><i class="fa-solid fa-file"></i> Portfolio</a></li>
 				<li><a href="#contact" class="btn"><i class="fa-solid fa-phone"></i> Contact</a></li>
 
-				<a href="https://www.linkedin.com/in/dave-dhruvin-b78528244/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: blue;"></i></a>
+				<a href="https://www.linkedin.com/in/dave-dhruvin-b78528244/" target="_blank"><i
+						class="fa-brands fa-linkedin-in" style="color: blue;"></i></a>
 				<a href="https://www.instagram.com/dhruvindave_" target="_blank"><i class="fa-brands fa-instagram"
 						style="color: rgb(247, 12, 192);"></i></a>
 			</ul>
@@ -69,9 +70,9 @@
 						</p>
 					</div>
 					<div class="img">
-					<img src="img\dhruvin.jpg">
+						<img src="img\dhruvin.jpg">
+					</div>
 				</div>
-			</div>
 				<div cv-dwn>
 					<a href="https://drive.google.com/file/d/12FjP_arE55IqzZHhr08bBKbv1S17dDLp/view?usp=sharing"
 						target="_blank">
@@ -202,23 +203,24 @@
 						</div>
 					</div>
 					<div class="contactForm">
-						<form action="">
-							<h2>Send Message</h2>
-							<div class="inputBox">
-								<input type="text" name="" required>
-								<span>Full Name</span>
-							</div>
-							<div class="inputBox">
-								<input type="text" name="" required>
-								<span>Email</span>
-							</div>
-							<div class="inputBox">
-								<textarea required></textarea>
-								<span>Type your Message...</span>
-							</div>
-							<div class="inputBox">
-								<input type="submit">
-							</div>
+						<form action="backend.php" name="contactform" method="get"></form>
+						<h2>Send Message</h2>
+
+						<div class="inputBox">
+							<input type="text" name="fullname" id="fullname" required>
+							<span>Full Name</span>
+						</div>
+						<div class="inputBox">
+							<input type="text" name="email" id="email" required>
+							<span>Email</span>
+						</div>
+						<div class="inputBox">
+							<textarea required name="topic" id="topic"></textarea>
+							<span>Type your Message...</span>
+						</div>
+						<div class="inputBox">
+							<input type="submit" value="submit">
+						</div>
 
 
 						</form>
