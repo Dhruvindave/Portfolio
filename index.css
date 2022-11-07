@@ -282,7 +282,7 @@ nav {
   word-spacing: 8px;
 }
 
-.row-skills {
+.row-skills{
   display: flex;
   width: 100vw;
   padding: 37px;
@@ -290,13 +290,13 @@ nav {
   margin-left: 36px;
 }
 
-.row .subrow1 {
+.row-skills .subrow1 {
   width: 43vw;
   padding: 12px;
   padding-left: 35px;
 }
 
-.row .subrow2 {
+.row-skills .subrow2 {
   width: 50vw;
 }
 
