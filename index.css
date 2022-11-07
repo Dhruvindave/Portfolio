@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 /**************************************Navbar Started/**************************************/
@@ -162,14 +163,15 @@ nav {
   box-sizing: border-box;
   padding: 5px;
   margin-bottom: 10px;
-  height: 85vh;
+  height: 95vh;
   background-color: aliceblue;
 }
 
 .about h1 {
   font-size: 60px;
   text-align: center;
-  margin-right: 77pc;
+  margin-right: 16em;
+  overflow: hidden;
   margin-bottom: 12px;
   font-weight: 900;
   font-family: cursive;
@@ -204,6 +206,7 @@ nav {
 
 .about-intro h2 {
   margin: 10px;
+  overflow: hidden;
   font-size: 2rem;
   margin-bottom: 20px;
   position: center;
@@ -260,10 +263,11 @@ nav {
 }
 
 .skills-page h2 {
+  overflow: hidden;
   font-size: 60px;
   margin-top: 55px;
     text-align: center;
-    margin-right: 77pc;
+    margin-right: 16em;
     margin-bottom: 12px;
     font-weight: 900;
     font-family: cursive;
@@ -348,6 +352,7 @@ nav {
 
 /**************************************Portfolio Started/**************************************/
 #portfolio {
+
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -388,7 +393,6 @@ nav {
 
 /**************************************Contact Started/**************************************/
 #contact {
-
   min-height: 100vh;
   padding: 50px 100px;
   display: flex;
@@ -407,6 +411,7 @@ nav {
 }
 
 .contact-content h2 {
+  overflow: hidden;
   font-size: 36px;
   font-weight: 500;
   color: aqua;
@@ -457,10 +462,10 @@ nav {
 }
 
 .contact-container .contactInfo .box .icon:hover {
-
+  
   color: rgb(182, 236, 255);
   background-color: black;
-
+  
 }
 
 .contact-text {
@@ -470,10 +475,11 @@ nav {
   color: #fff;
   flex-direction: column;
   font-weight: 300;
-
+  
 }
 
 .contact-container .contactInfo .box .contact-text h3 {
+  overflow: hidden;
   font-weight: 500;
   color: rgb(182, 236, 255);
 }
@@ -488,6 +494,7 @@ nav {
   font-size: 30px;
   color: #333;
   font-weight: 500;
+  overflow: hidden;
 }
 
 .contactForm .inputBox {
