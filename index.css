@@ -163,7 +163,7 @@ nav {
   box-sizing: border-box;
   padding: 5px;
   margin-bottom: 10px;
-  height: 95vh;
+  /* height: 95vh; */
   background-color: aliceblue;
 }
 
@@ -641,6 +641,7 @@ nav {
 
   .background {
     height: 83vh;
+    overflow: hidden;
   }
 
   /*home ended*/
@@ -655,12 +656,19 @@ nav {
     flex-direction: column-reverse;
     margin: 12px 36px;
   }
-
+#pic .img{
+  overflow: hidden;
+  text-align: left;
+}
   #pic img {
-    margin-bottom: 32px;
-    width: fit-content;
-    height: auto;
+    height: 176px;
+    border-radius: 50%;
+    width: 188px;
+    /* margin-top: 13px;
+    margin-left: 168px;
+    margin-bottom: 44px; */
   }
+  
 
   .intro p {
     font-size: 27px;
