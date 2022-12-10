@@ -231,11 +231,11 @@ nav {
 /**************************************About Ended/**************************************/
 /**************************************Skills Started/**************************************/
 .skills-page {
-  padding: 12px;
-  height: 110vh;
-  width: 100vw;
-  background-color: white;
-
+  
+    padding: 12px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }
 
 .skills-page h2 {
@@ -260,20 +260,20 @@ nav {
 
 .row-skills{
   display: flex;
-  width: 100vw;
+  width: 100%;
   padding: 37px;
   font-size: 27px;
   margin-left: 36px;
 }
 
 .row-skills .subrow1 {
-  width: 43vw;
+  width: 50%;
   padding: 12px;
   padding-left: 35px;
 }
 
 .row-skills .subrow2 {
-  width: 50vw;
+  width: 50%;
 }
 
 .skill {
@@ -621,38 +621,18 @@ nav {
   /*home ended*/
 
   /*about started*/
-  .about h1{
-    margin: 0px;
-    padding: 0px;
-  }
-  #pic {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 12px 0px;
-    padding: 0px;
-  }
-#pic .img{
-  overflow: hidden;
-  width: 100%;
-  margin: 6px 21%;
-}
-  #pic img {
-    height: 233px;
-    border-radius: 25%;
-    width: 245px;
-    border: 12px groove #149ddd;
-  }
-  
-
-  .about-intro p{
+  .about .about-container {
     width: 100%;
+    margin: 0;
   }
-
   /*about ended*/
 
   /*skills started*/
   .skills-page {
     height: 100vh;
+  }
+  .skills-page p{
+    margin: 0px;
   }
 
   .seprater {
