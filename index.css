@@ -284,7 +284,7 @@ nav {
 
 .skill-graph {
   background: grey;
-  width: 35vw;
+  width: 85%;
 }
 
 .skill-bar {
@@ -629,6 +629,7 @@ nav {
   /*about started*/
   .about .about-container {
     width: 100%;
+   
     margin: 0;
   }
   /*about ended*/
@@ -637,6 +638,7 @@ nav {
   
   .skills-page p{
     margin: 0px;
+    overflow: hidden;
   }
   
   .seprater {
@@ -745,9 +747,17 @@ nav {
   }
 
   .about .about-container {
-  display: flex;
-  flex-direction: column-reverse;
+  /* /* display: flex; */
+  flex-direction: column-reverse; 
+  padding: 0px;
+  width: 200%;
+
    }
+   .about .about-container .about-sub-container .about-para {
+    word-spacing: 0px;
+    letter-spacing: 0px;
+   }
+   /* skills page started */
    
   .skills-page {
    /* height: 100vh;*/
@@ -759,13 +769,17 @@ nav {
   }
   .skills-page p{
     margin: 0px;
-    font-size: 29px;
+    font-size: 18px;
     text-align: left;
+    word-spacing: 0px;
   }
   .seprater {
   /*   margin: 11px 21px;*/
     /*flex-direction: column;*/
     align-items: flex-start;
+  }
+  .row-skills{
+    display: block;
   }
 
   .part1 {
