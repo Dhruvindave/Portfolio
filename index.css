@@ -745,8 +745,8 @@ nav {
   }
 
   .about .about-container {
-  display: block;
-  justify-content: column-reverse;
+  display: flex;
+  flex-direction: row-reverse;
    }
    
   .skills-page {
