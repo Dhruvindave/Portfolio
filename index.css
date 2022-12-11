@@ -3,7 +3,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -26,6 +26,7 @@ nav {
   background-blend-mode: darken;
   box-sizing: border-box;
   display: flex;
+  overflow-y: hidden;
 }
 
 .sidebar ul {
@@ -48,7 +49,7 @@ nav {
   text-align: center;
   list-style-type: none;
   margin: 7px 5px;
-
+  
 }
 
 
@@ -62,7 +63,7 @@ nav {
   margin: 7px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-
+  
 }
 
 .sidebar li a:hover {
@@ -71,7 +72,7 @@ nav {
 
 .fa-brands {
   padding: 7px;
-
+  
   border-radius: 22px;
   background-color: black;
   font-size: 22px;
@@ -98,7 +99,7 @@ nav {
   transition: all 2s;
   border-radius: 44px;
   background-color: rgb(138, 191, 226);
-
+  
 }
 
 .profile img:hover {
@@ -127,7 +128,10 @@ nav {
   padding: 0px;
   margin: 0px;
   border: 2px solid aqua;
-
+  
+}
+.background2{
+  background-color: rgb(173, 192, 208);
 }
 
 .devinfo {
@@ -150,7 +154,7 @@ nav {
   font-size: 30px;
   padding-left: 16px;
   font-family: fangsong;
-
+  
 }
 
 /**************************************Home Ended/**************************************/
@@ -158,6 +162,9 @@ nav {
 /**************************************About Started/**************************************/
 #about {
   background-color: rgb(238 238 238);
+  width: 100%;
+  border: 2px solid aqua;
+  overflow: hidden;
   /* margin: 0px 12px; */
 }
 #heading {
@@ -175,17 +182,106 @@ nav {
   margin: 0px 62px;
   justify-content: space-around;
   padding: 12px 22px;
-  background-color: aliceblue;
-  /* background-color: #149ddd; */
+  /* background-color: aliceblue; */
+  /* background-color: #c8e9f7;
+  animation-name: color;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out; */
 }
+/* 
+@keyframes color {
+ 0% { 
+  background-color: #c8e9f7;
+  border-radius: 100%;
+  
+ } 
+ 5% { 
+   background-color: #c8d5dc;
+   border-radius: 98%;
+  
+ } 
+ 10% { 
+   background-color: #bfd5e0;
+   border-radius: 95%;
+  
+   
+ } 
+ 15% { 
+   background-color: #a8cde0;
+   border-radius: 90%;
+   
+  
+ }  
+ 20% { 
+   background-color: #92c1d9;
+   border-radius: 88%;
+  
+ } 
+ 25% { 
+   background-color: #7ab2ce;
+   border-radius: 86%;
+ 
+ } 
+ 30%{
+  background-color: #77ddd0fa;
+  border-radius: 84%;
 
+ }
+ 35%{
+   background-color: #499fca;
+  }
+  40%{
+    background-color: #2e98cd;
+  }
+  45%{
+   border-radius: 80%;
+  background-color: rgb(6, 217, 172);
+ }
+ 50%{
+  background-color: rgb(37, 220, 180);
+ }
+ 55%{
+  background-color: rgb(68, 213, 182);
+ }
+ 60%{
+  background-color: rgb(103, 213, 189);
+  border-radius: 84%;
+}
+ 65%{
+  border-radius: 86%;
+  background-color: rgb(124, 209, 191);
+ }
+ 75%{
+  border-radius: 88%;
+  background-color: rgb(146, 203, 191);
+ }
+ 80%{
+  border-radius: 90%;
+  background-color: rgb(183, 211, 191);
+ }
+ 85%{
+  border-radius: 92%;
+  background-color: rgb(184, 207, 186);
+ }
+ 90%{
+  border-radius: 94%;
+  background-color: rgb(136, 211, 133);
+ }
+  95%{
+    border-radius: 96%;
+  }
+  100%{
+    border-radius: 100%;
+  }
+} 
 
+ */
 .about .about-container .about-sub-container:nth-child(1){
   width: 50%;
-  /* margin: auto; */
-  /* margin: 20px 20px; */
+  margin: auto;
+  margin: 20px 20px;
   /* background-color: #149ddd; */
-}
+ }
 
 .about .about-container .about-sub-container:nth-child(2){
   width: 42%;
@@ -209,19 +305,19 @@ nav {
 }
 
 .about .about-container .about-sub-container img{
- width: 100%;
- }
- .btn-sm{
+  width: 100%;
+}
+.btn-sm{
   border: 2px solid cadetblue;
-    cursor: pointer;
-    padding: 6px 16px;
-    border-radius: 12ch 12ch 12ch 12ch / 12ch 12ch 12ch 12ch;
-    text-align: center;
-    float: left;
-    font-size: 18px;
-    margin: 4px 22px;
-    color: black;
-    background-color: rgb(138, 191, 226);
+  cursor: pointer;
+  padding: 6px 16px;
+  border-radius: 12ch 12ch 12ch 12ch / 12ch 12ch 12ch 12ch;
+  text-align: center;
+  float: left;
+  font-size: 18px;
+  margin: 4px 22px;
+  color: black;
+  background-color: rgb(138, 191, 226);
 }
 .btn-sm:hover {
   background-color: black;
@@ -233,23 +329,24 @@ nav {
 /**************************************Skills Started/**************************************/
 .skills-page {
   
-    padding: 12px;
-    /* height: 100%; */
-    width: 100%;
-    /* overflow: hidden; */
-    background-color: white;
+  padding: 12px;
+  /* height: 100%; */
+  
+  width: 100%;
+  overflow: hidden;
+  /* background-color: white; */
 }
 
 .skills-page h2 {
   overflow: hidden;
   font-size: 60px;
   margin-top: 66px;
-    text-align: center;
-    margin-right: 16em;
-    margin-bottom: 12px;
-    font-weight: 900;
-    font-family: cursive;
-    color: aqua;
+  text-align: center;
+  margin-right: 16em;
+  margin-bottom: 12px;
+  font-weight: 900;
+  font-family: cursive;
+  color: aqua;
 }
 
 .skills-page p {
@@ -265,8 +362,11 @@ nav {
   width: 100%;
   padding: 37px;
   font-size: 27px;
-  margin-left: 36px;
+  /* margin-left: 36px; */
 }
+ .skills-item{
+  text-align: left;
+ }
 
 .row-skills .subrow1 {
   width: 50%;
@@ -284,7 +384,7 @@ nav {
 
 .skill-graph {
   background: grey;
-  width: 85%;
+  width: 35vw;
 }
 
 .skill-bar {
@@ -330,26 +430,28 @@ nav {
 
 /**************************************Portfolio Started/**************************************/
 #portfolio {
-
+  background-color: rgb(238 238 238);
   display: flex;
   overflow: hidden;
   flex-direction: column;
   align-items: center;
-  background-color: black;
-  color: white;
+  /* background-color: aliceblue; */
+  color: aqua;
   height: 100%;
+  border: 2px solid aqua;
+
   align-items: center;
   padding: 64px 0px 39px 0px;
-
+  
 }
 
 .portfolio h1 {
-  text-decoration: underline aqua;
+  /* text-decoration: underline rgb(166, 255, 0); */
   padding: 81px 2px 38px 12px;
   font-family: monospace;
   font-size: 51px;
   margin: 0pc 3pc;
-
+  
 }
 
 .gallary {
@@ -361,6 +463,8 @@ nav {
 
 .gallary img {
   width: 385px;
+  border-radius: 12%;
+  border: 7px solid aqua;
   height: 240px;
   margin: 25px;
 }
@@ -399,8 +503,8 @@ nav {
   left: 10%;
 }
 .card img{
- width: 100%; 
- height: auto;
+  width: 100%; 
+  height: auto;
 }
 .card-text{
   width: 100%;
@@ -582,7 +686,7 @@ nav {
 .contactForm .inputBox input[type="submit"]:hover {
   background-color: black;
   color: rgb(182, 236, 255);
-
+  
 }
 .margin{
   margin-top: 22px;
@@ -594,24 +698,24 @@ nav {
 
 @media only screen and (max-width: 991px) {
   /*navbar started*/
-
+  
   .nav {
     width: 84vw;
   }
-
+  
   .profile {
     padding-left: 45px;
   }
-
+  
   .profile p {
     font-size: 0px;
   }
-
+  
   .sidebar li a {
     font-size: 17px;
     padding: 6px 9px;
   }
-
+  
   /*navbar ended*/
   /*home started*/
   .devinfo {
@@ -623,17 +727,17 @@ nav {
     height: 83vh;
     overflow: hidden;
   }
-
+  
   /*home ended*/
-
+  
   /*about started*/
   .about .about-container {
     width: 100%;
-   
+    
     margin: 0;
   }
   /*about ended*/
-
+  
   /*skills started*/
   
   .skills-page p{
@@ -662,7 +766,7 @@ nav {
 .row-skills .subrow2{
   width: 60vw;
 }
-  .part1 {
+.part1 {
     margin: 0px;
   }
   .ninety-five {
@@ -688,7 +792,7 @@ nav {
   .thirty-five {
     width: 18vw;
   }
-
+  
   /*skills ended*/
   /*portfolio started*/
   #portfolio {
@@ -738,14 +842,14 @@ nav {
     width: 84vw;
   }
   .devinfo {
-   
+    
     padding-left: 12px;
   }
 
   .background {
     height: 70vh;
   }
-
+  
   .about .about-container {
   /* /* display: flex; */
   flex-direction: column-reverse; 
@@ -755,6 +859,8 @@ nav {
    }
    .about .about-container .about-sub-container .about-para {
     word-spacing: 0px;
+    margin: 0px;
+    overflow-y: hidden;
     letter-spacing: 0px;
    }
    /* skills page started */
@@ -780,10 +886,40 @@ nav {
   }
   .row-skills{
     display: block;
+    padding: 0;
+    margin: 0;
   }
-
+  .row-skills .subrow1, .subrow2{
+    margin: 0;
+    padding: 0;
+  }
+  .row-skills .subrow1{
+    margin-bottom: 32px;
+    margin-top: 32px;
+    /* border-bottom-style: solid; */
+  }
+  
   .part1 {
     margin: 0px;
   }
-  
+  .skill-graph {
+    background: grey;
+    width: 76vw;
+}
+
+
+
+  /* gallery */
+  #portfolio{
+    border: none;
+  }
+  .gallary img{
+    border: none;
+  }
+ 
+  /* contact */
+  #contact{
+    padding: 0;
+    margin: 0;
+  }
 }
