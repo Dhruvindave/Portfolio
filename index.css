@@ -746,6 +746,7 @@ nav {
 
   .about .about-container {
   display: block;
+  justify-content: column-reverse;
    }
    
   .skills-page {
