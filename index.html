@@ -15,8 +15,9 @@
 
 <body>
 
-	<!-----------------------------------------------------Navbar started------------------------------------------------->
+	
 	<div class="sidebar" id="sidebar">
+		
 		<nav>
 			<ul>
 				<li><a href="#home" class="btn"><i class="fa-solid fa-house"></i> Home</a></li>
@@ -24,11 +25,12 @@
 				<li><a href="#skills" class="btn"><i class="fa-solid fa-code"></i> Skills</a></li>
 				<li><a href="#portfolio" class="btn"><i class="fa-solid fa-file"></i> Portfolio</a></li>
 				<li><a href="#contact" class="btn"><i class="fa-solid fa-phone"></i> Contact</a></li>
-
-				<a href="https://www.linkedin.com/in/dave-dhruvin-b78528244/" target="_blank"><i
-						class="fa-brands fa-linkedin-in" style="color: blue;"></i></a>
-				<a href="https://www.instagram.com/dhruvindave_" target="_blank"><i class="fa-brands fa-instagram"
-						style="color: rgb(247, 12, 192);"></i></a>
+				<div class="icon-style">
+					<a href="https://www.linkedin.com/in/dave-dhruvin-b78528244/" target="_blank"><i
+							class="fa-brands fa-linkedin-in" style="color: blue;"></i></a>
+					<a href="https://www.instagram.com/dhruvindave_" target="_blank"><i class="fa-brands fa-instagram"
+							style="color: rgb(247, 12, 192);"></i></a>
+				</div>
 			</ul>
 		</nav>
 		<div class="profile">
@@ -39,18 +41,35 @@
 	<!-----------------------------------------------------Navbar ended------------------------------------------------->
 	<!-----------------------------------------------------home started------------------------------------------------->
 	<section class="main">
+		
 		<section class="infocontainer">
 			<div class="background">
+				<!-----------------------------------------------------Navbar started------------------------------------------------->
+	<div class="hamburger">
+
+		<button id="btn" onclick="hamburger()"><i class="fa-solid fa-bars"></i></button>
+	</div>
 				<div class="devinfo" id="home">
 
 					<div class="passion">Hi, I'm</div>
 					<div class="name">Dhruvin Dave</div>
 					<div class="passion">Developer</div>
-
+					
 				</div>
 
 			</div>
-
+<script>
+	function hamburger() {
+	
+		let sidebar = document.getElementById("sidebar");
+		if(sidebar.style.display == "block"){
+			sidebar.style.display = "none";
+		}
+		else{
+			sidebar.style.display= "block";
+		}
+	}
+</script>
 			<!-----------------------------------------------------home ended------------------------------------------------->
 			<!-----------------------------------------------------About started------------------------------------------------->
 
@@ -71,7 +90,8 @@
 							</p>
 						</div>
 						<div cv-dwn="">
-							<a href="https://drive.google.com/file/d/12FjP_arE55IqzZHhr08bBKbv1S17dDLp/view?usp=sharing" target="_blank">
+							<a href="https://drive.google.com/file/d/12FjP_arE55IqzZHhr08bBKbv1S17dDLp/view?usp=sharing"
+								target="_blank">
 								<button class="btn-sm">
 									<i class="fa-solid fa-download"></i>
 									Resume
@@ -94,87 +114,87 @@
 			<span id="skills"></span>
 			<div id="heading" class="margin">
 				<h2>Skills</h2>
-			<section class="skills-page">
-				
-
-				<p>Understanding the requirements and estimating the work.
-					Maintaining skill matrix of team and guiding them for further growth.
-					Improving soft skills of team which helps in communication and documentation.
-					Providing inputs to the upper level for improvement of the process.</p>
+				<section class="skills-page">
 
 
-				<div class="row-skills">
-					<div class="subrow1">
-						<div class="skill">
-							<div class="skills-item"><strong>Html</strong></div>
-							<div class="skill-graph">
-								<div class="skill-bar eighty-five"></div>
+					<p>Understanding the requirements and estimating the work.
+						Maintaining skill matrix of team and guiding them for further growth.
+						Improving soft skills of team which helps in communication and documentation.
+						Providing inputs to the upper level for improvement of the process.</p>
+
+
+					<div class="row-skills">
+						<div class="subrow1">
+							<div class="skill">
+								<div class="skills-item"><strong>Html</strong></div>
+								<div class="skill-graph">
+									<div class="skill-bar eighty-five"></div>
+								</div>
+							</div>
+							<div class="skill">
+								<div class="skills-item"><strong>CSS</strong></div>
+								<div class="skill-graph">
+									<div class="skill-bar seventy-five"></div>
+								</div>
+							</div>
+							<div class="skill">
+								<div class="skills-item"><strong>C Language</strong></div>
+								<div class="skill-graph">
+									<div class="skill-bar ninety-five"></div>
+								</div>
+							</div>
+							<div class="skill">
+								<div class="skills-item"><strong>Javascript</strong></div>
+								<div class="skill-graph">
+									<div class="skill-bar thirty-five"></div>
+								</div>
 							</div>
 						</div>
-						<div class="skill">
-							<div class="skills-item"><strong>CSS</strong></div>
-							<div class="skill-graph">
-								<div class="skill-bar seventy-five"></div>
+
+						<div class="subrow2">
+							<div class="skill">
+								<div class="skills-item"><strong>Team Management</strong></div>
+								<div class="skill-graph">
+									<div class="skill-bar seventy-five"></div>
+								</div>
+							</div>
+
+							<div class="skill">
+								<div class="skills-item"><strong>Time Management</strong></div>
+								<div class="skill-graph">
+									<div class="skill-bar sixty-five"></div>
+								</div>
+							</div>
+
+							<div class="skill">
+								<div class="skills-item"><strong>Project Management</strong></div>
+								<div class="skill-graph">
+									<div class="skill-bar eighty-five"></div>
+								</div>
+							</div>
+							<div class="skill">
+								<div class="skills-item"><strong>Communication Skill</strong></div>
+								<div class="skill-graph">
+									<div class="skill-bar sixty-five"></div>
+								</div>
 							</div>
 						</div>
-						<div class="skill">
-							<div class="skills-item"><strong>C Language</strong></div>
-							<div class="skill-graph">
-								<div class="skill-bar ninety-five"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skills-item"><strong>Javascript</strong></div>
-							<div class="skill-graph">
-								<div class="skill-bar thirty-five"></div>
-							</div>
-						</div>
+
 					</div>
+				</section>
+				<!-----------------------------------------------------Skills ended------------------------------------------------->
 
-					<div class="subrow2">
-						<div class="skill">
-							<div class="skills-item"><strong>Team Management</strong></div>
-							<div class="skill-graph">
-								<div class="skill-bar seventy-five"></div>
-							</div>
-						</div>
-
-						<div class="skill">
-							<div class="skills-item"><strong>Time Management</strong></div>
-							<div class="skill-graph">
-								<div class="skill-bar sixty-five"></div>
-							</div>
-						</div>
-
-						<div class="skill">
-							<div class="skills-item"><strong>Project Management</strong></div>
-							<div class="skill-graph">
-								<div class="skill-bar eighty-five"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skills-item"><strong>Communication Skill</strong></div>
-							<div class="skill-graph">
-								<div class="skill-bar sixty-five"></div>
-							</div>
-						</div>
+				<!-----------------------------------------------------Portfolio started------------------------------------------------->
+				<section id="portfolio" class="portfolio">
+					<h1>PORTFOLIO</h1>
+					<div class="gallary">
+						<img src="img\Drona-logo.jpg">
+						<img src="img\rku.jpg">
+						<img src="img\project_img1.jpg">
 					</div>
+				</section>
 
-				</div>
-			</section>
-			<!-----------------------------------------------------Skills ended------------------------------------------------->
-
-			<!-----------------------------------------------------Portfolio started------------------------------------------------->
-			<section id="portfolio" class="portfolio">
-				<h1>PORTFOLIO</h1>
-				<div class="gallary">
-					<img src="img\Drona-logo.jpg">
-					<img src="img\rku.jpg">
-					<img src="img\project_img1.jpg">
-				</div>
-			</section>
-
-			<!-- <section>
+				<!-- <section>
 				<div class="heading">Portfolio</div>
 				<div class="">
 					<div class="col-md-4 col-sm-6">
@@ -206,68 +226,68 @@
 					</div>
 				</div>
 			</section> -->
-			<!-----------------------------------------------------Portfolio ended------------------------------------------------->
+				<!-----------------------------------------------------Portfolio ended------------------------------------------------->
 
-			<!-----------------------------------------------------contact started------------------------------------------------->
-			<section id="contact">
-				<div class="contact-content">
-					<h2>Contact us</h2>
-					<p>GOt a question? We'd love to hear from you. Send us a message and we'll respond as soon as
-						possible.</p>
-				</div>
-				<div class="contact-container">
-					<div class="contactInfo">
-						<div class="box">
-							<div class="icon"><i class="fa-solid fa-location-dot"></i>
-								<!-- This icon is in the following aliases:map-marker-alt This icon is in the following categories:SOCIALMAPS Version history for this icon:This icon was added in Font Awesome5.0.0 This icon was last updated in Font Awesome6.2.0 -->
+				<!-----------------------------------------------------contact started------------------------------------------------->
+				<section id="contact">
+					<div class="contact-content">
+						<h2>Contact us</h2>
+						<p>GOt a question? We'd love to hear from you. Send us a message and we'll respond as soon as
+							possible.</p>
+					</div>
+					<div class="contact-container">
+						<div class="contactInfo">
+							<div class="box">
+								<div class="icon"><i class="fa-solid fa-location-dot"></i>
+									<!-- This icon is in the following aliases:map-marker-alt This icon is in the following categories:SOCIALMAPS Version history for this icon:This icon was added in Font Awesome5.0.0 This icon was last updated in Font Awesome6.2.0 -->
+								</div>
+								<div class="contact-text">
+									<h3>Address</h3>
+									<p>Madhav Ressidency Near Raiya Circle <br>Rajkot 360005 <br>Gujarat</p>
+								</div>
 							</div>
-							<div class="contact-text">
-								<h3>Address</h3>
-								<p>Madhav Ressidency Near Raiya Circle <br>Rajkot 360005 <br>Gujarat</p>
+							<div class="box">
+								<div class="icon"><i class="fa-solid fa-phone"></i></div>
+								<div class="contact-text">
+									<h3>Phone</h3>
+									<p><a href="tel:+919979568684">+91-9979568684</a></p>
+								</div>
+							</div>
+							<div class="box">
+								<div class="icon"><i class="fa-solid fa-envelope"></i></div>
+								<div class="contact-text">
+									<h3>Email</h3>
+									<p><a href="mailto:dhruvindave60@gmail.com">dhruvindave60@gmail.com</a></p>
+								</div>
 							</div>
 						</div>
-						<div class="box">
-							<div class="icon"><i class="fa-solid fa-phone"></i></div>
-							<div class="contact-text">
-								<h3>Phone</h3>
-								<p><a href="tel:+919979568684">+91-9979568684</a></p>
+						<!-- Contact -->
+						<div class="contactForm">
+							<form action="backend.php" name="contactform" method="get"></form>
+							<h2>Send Message</h2>
+
+							<div class="inputBox">
+								<input type="text" name="fullname" id="fullname" required>
+								<span>Full Name</span>
 							</div>
-						</div>
-						<div class="box">
-							<div class="icon"><i class="fa-solid fa-envelope"></i></div>
-							<div class="contact-text">
-								<h3>Email</h3>
-								<p><a href="mailto:dhruvindave60@gmail.com">dhruvindave60@gmail.com</a></p>
+							<div class="inputBox">
+								<input type="text" name="email" id="email" required>
+								<span>Email</span>
 							</div>
+							<div class="inputBox">
+								<textarea required name="topic" id="topic"></textarea>
+								<span>Type your Message...</span>
+							</div>
+							<div class="inputBox">
+								<input type="submit" value="submit">
+							</div>
+
+
+							</form>
 						</div>
 					</div>
-					<!-- Contact -->
-					<div class="contactForm">
-						<form action="backend.php" name="contactform" method="get"></form>
-						<h2>Send Message</h2>
-
-						<div class="inputBox">
-							<input type="text" name="fullname" id="fullname" required>
-							<span>Full Name</span>
-						</div>
-						<div class="inputBox">
-							<input type="text" name="email" id="email" required>
-							<span>Email</span>
-						</div>
-						<div class="inputBox">
-							<textarea required name="topic" id="topic"></textarea>
-							<span>Type your Message...</span>
-						</div>
-						<div class="inputBox">
-							<input type="submit" value="submit">
-						</div>
-
-
-						</form>
-					</div>
-				</div>
-			</section>
-			<!-----------------------------------------------------contact ended------------------------------------------------->
+				</section>
+				<!-----------------------------------------------------contact ended------------------------------------------------->
 		</section>
 	</section>
 

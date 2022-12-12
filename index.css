@@ -13,14 +13,14 @@ html {
 
 /**************************************Navbar Started/**************************************/
 nav {
-  width: 83vw;
+  width: 80%;
 }
 
 .sidebar {
-
+  /* display: none; */
   list-style-type: none;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   position: fixed !important;
   background-color: rgb(4, 11, 20);
   background-blend-mode: darken;
@@ -58,7 +58,7 @@ nav {
   padding: 6px 12px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 14px;
   margin: 7px 2px;
   transition-duration: 0.4s;
@@ -469,61 +469,6 @@ nav {
   height: 240px;
   margin: 25px;
 }
-/* .container-fluid{
-  height: 70vh;
-}
-.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-right: auto;
-  margin-left: auto;
-}
-.card{
-  position: relative;
-  overflow: hidden;
-}
-
-.card::before{
-  position: absolute;
-  content: '';
-  width: 80%;
-  height: 220%;
-  background: rgba(138, 191, 226,0.9);
-  top: -50%;
-  left: -100%;
-  z-index: 1;
-  transform: rotate(25deg);
-  transform-origin: center top 0;
-  transition: 0.5s;
-}
-
-.card:hover:before{
-  left: 10%;
-}
-.card img{
-  width: 100%; 
-  height: auto;
-}
-.card-text{
-  width: 100%;
-  padding: 0 20px;
-  position: absolute;
-  top: -100%;
-  color: rgb(234, 81, 106);
-  left: 0;
-  z-index: 2;
-  transition: 1.1;
-}
-.card-text h3{
-  font-family: popins;
-}
-.card:hover .card-text{
-  top: 80px;
-} */
-/**************************************Portfolio Ended/**************************************/
 
 
 
@@ -840,8 +785,43 @@ nav {
 
 
 @media only screen and (max-width: 479px) {
-  .nav {
-    width: 84vw;
+  .hamburger{
+    background-color: black;
+  }
+  .hamburger button{
+
+    margin: 0px 352px;
+    color : aqua;
+    position: fixed;
+    border: none;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background: transparent; */
+  }
+  .hamburger button i{
+    height: 44px;
+    width: 44px;
+    font-size: 33px;
+    margin: 12px;
+    /* padding: 12px; */
+  }
+  .sidebar{
+  display: none;
+ } 
+  .sidebar ul {
+    display: block;
+    padding: 0;
+}
+.sidebar li{
+  overflow-y: hidden;
+  margin: 31px 70px;
+  text-align: left;
+}
+.icon-style{
+  margin-left: 69px;
+}
+  .profile img{
+    display: none;
   }
  .devinfo {
     padding-left: 12px;
