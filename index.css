@@ -162,7 +162,7 @@ nav {
 /**************************************About Started/**************************************/
 #about {
   background-color: rgb(238 238 238);
-  width: 100%;
+  width: 98%;
   border: 2px solid aqua;
   overflow: hidden;
   /* margin: 0px 12px; */
@@ -305,7 +305,8 @@ nav {
 }
 
 .about .about-container .about-sub-container img{
-  width: 100%;
+  /* width: 100%; */
+  width: 482px;
 }
 .btn-sm{
   border: 2px solid cadetblue;
@@ -589,6 +590,7 @@ nav {
   height: 60px;
   background: rgb(182, 236, 255);
   display: flex;
+  color: black;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -620,7 +622,7 @@ nav {
 }
 
 .contactForm {
-  width: 40%;
+  /* width: 40%; */
   padding: 40px;
   background: #fff;
 }
@@ -841,11 +843,10 @@ nav {
   .nav {
     width: 84vw;
   }
-  .devinfo {
-    
+ .devinfo {
     padding-left: 12px;
-  }
-
+    margin-top: -37px;
+}
   .background {
     height: 70vh;
   }
@@ -857,9 +858,13 @@ nav {
   width: 200%;
 
    }
+   .about .about-container .about-sub-container img{
+    margin-left: -42px;
+   }
    .about .about-container .about-sub-container .about-para {
     word-spacing: 0px;
-    margin: 0px;
+    /* margin-right: 22px; */
+    margin: 0 22px 0 ;
     overflow-y: hidden;
     letter-spacing: 0px;
    }
@@ -919,7 +924,35 @@ nav {
  
   /* contact */
   #contact{
+    overflow: hidden;
     padding: 0;
     margin: 0;
   }
+
+  .contact-content{
+    display: none;
+  }
+  .contact-container{
+    display: flex;
+   /* margin-left: -63px; */
+    flex-direction: column;
+  }
+  
+.contact-container .contactInfo {
+ /* flex-direction: row; */
+ width: 100%;
+ margin-left: 42px;
+
+}
+.contact-container .contactInfo .box .contact-text h3{
+  text-align: left;
+}
+.contact-container .contactInfo .box .contact-text p{
+  text-align: left;
+}
+  .contactForm{
+    width: 70%;
+  }
+
+  
 }
