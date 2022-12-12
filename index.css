@@ -123,7 +123,7 @@ nav {
   box-sizing: border-box;
   background-image: url(bg_img.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 0px;
   margin: 0px;
