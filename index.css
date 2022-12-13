@@ -367,7 +367,9 @@ nav {
 }
  .skills-item{
   text-align: left;
+  color: #ed89aa;
  }
+
 
 .row-skills .subrow1 {
   width: 50%;
@@ -392,7 +394,7 @@ nav {
   height: 6px;
   width: 265px;
   border: 2px solid black;
-  background-color: #149ddd;
+  /* background-color: #149ddd; */
 }
 
 .skill {
@@ -404,19 +406,23 @@ nav {
 }
 
 .ninety-five {
+  background-color: tomato;
   width: 30vw;
 }
 
 .eighty-five {
   width: 27vw;
+  background-color: orange;
 }
 
 .seventy-five {
   width: 23vw;
+  background-color: rgba(44, 44, 229, 0.694);
 }
 
 .sixty-five {
   width: 18vw;
+  background-color: yellow;
 }
 
 .fifty-five {
@@ -463,7 +469,7 @@ nav {
 }
 
 .gallary img {
-  width: 385px;
+  width: 30%;
   border-radius: 12%;
   border: 7px solid aqua;
   height: 240px;
@@ -555,6 +561,7 @@ nav {
   margin-left: 20px;
   font-size: 16px;
   color: #fff;
+  font-family: 'Times New Roman', Times, serif;
   flex-direction: column;
   font-weight: 300;
   
@@ -569,6 +576,7 @@ nav {
 .contactForm {
   /* width: 40%; */
   padding: 40px;
+  font-family: 'Times New Roman', Times, serif;
   background: #fff;
 }
 
@@ -666,6 +674,7 @@ nav {
   /*navbar ended*/
   /*home started*/
   .devinfo {
+    margin: 0;
     /* padding-top: 31pc; */
     padding-left: 117px;
   }
@@ -678,6 +687,9 @@ nav {
   /*home ended*/
   
   /*about started*/
+  .about .about-container .about-sub-container img{
+    margin: 12px -33px;
+  }
   .about .about-container {
     width: 100%;
     
@@ -706,40 +718,45 @@ nav {
   .row-skills{
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 .row-skills .subrow1{
-  width: 60vw;
+  width: 100%;
 }
 .row-skills .subrow2{
-  width: 60vw;
+  width: 100%;
 }
 .part1 {
     margin: 0px;
   }
   .ninety-five {
-    width: 60vw;
+    width: 90%;
   }
   
   .eighty-five {
-    width: 54vw;
+    width: 85%;
   }
   
   .seventy-five {
-    width: 47vw;
+    width: 70%;
   }
   
   .sixty-five {
-    width: 34vw;
+    width: 55%;
   }
   
   .fifty-five {
-    width: 24vw;
+    width: 45%;
   }
   
   .thirty-five {
     width: 18vw;
   }
   
+  .gallary img{
+    width: 41%;
+  }
   /*skills ended*/
   /*portfolio started*/
   #portfolio {
@@ -770,6 +787,26 @@ nav {
   .responsive {
     width: 100%;
   }
+
+  .about .about-container{
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+  }
+  .about .about-container .about-sub-container img{
+    /* margin: 12px 50px; */
+  }
+  .about .about-container .about-sub-container:nth-child(1){
+    width: 100%;
+  }
+  .about .about-container .about-sub-container .about-para{
+    margin: 0;
+    margin-bottom: 22px;
+    /* padding: 0 23px 0 0; */
+  }
+  .about .about-container .about-sub-container .about-para p{
+    padding-right: 38px;
+  }
 }
 
 .clearfix:after {
@@ -787,12 +824,13 @@ nav {
 @media only screen and (max-width: 479px) {
   .hamburger{
     background-color: black;
+    position: fixed;
   }
   .hamburger button{
 
-    margin: 0px 352px;
+    
     color : aqua;
-    position: fixed;
+    /* position: fixed; */
     border: none;
     border-radius: 2%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -835,19 +873,31 @@ nav {
   /* /* display: flex; */
   flex-direction: column-reverse; 
   padding: 0px;
+  margin: 0;
   width: 200%;
 
    }
    .about .about-container .about-sub-container img{
-    margin-left: -42px;
+    width: 140%;
+    /* margin-right: -42px; */
    }
-   .about .about-container .about-sub-container .about-para {
-    word-spacing: 0px;
-    /* margin-right: 22px; */
-    margin: 0 22px 0 ;
-    overflow-y: hidden;
-    letter-spacing: 0px;
+   .about .about-container .about-sub-container:nth-child(1){
+    margin: 0;
+    padding: 0;
+    width: 100vw;
    }
+   .about .about-container .about-sub-container .about-para{
+    letter-spacing: 0;
+    word-spacing: 0;
+   }
+   .about .about-container .about-sub-container .about-para p{
+    padding: 0;
+   }
+
+
+    
+   
+
    /* skills page started */
    
   .skills-page {
@@ -891,6 +941,30 @@ nav {
     background: grey;
     width: 76vw;
 }
+.ninety-five {
+  width: 90%;
+}
+
+.eighty-five {
+  width: 75%;
+}
+
+.seventy-five {
+  width: 57%;
+}
+
+.sixty-five {
+  width: 47%;
+}
+
+.fifty-five {
+  width: 40%;
+}
+
+.thirty-five {
+  width: 18vw;
+}
+
 
 
 
@@ -900,6 +974,7 @@ nav {
   }
   .gallary img{
     border: none;
+    width: 100%;
   }
  
   /* contact */
