@@ -26,7 +26,6 @@ nav {
   background-blend-mode: darken;
   box-sizing: border-box;
   display: flex;
-z-index: 2000;
   overflow-y: hidden;
 }
 
