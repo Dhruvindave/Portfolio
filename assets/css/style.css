@@ -1,0 +1,119 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#loaderDiv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+#loader {
+    height: 10rem;
+}
+
+
+
+body {
+    line-height: 26px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #777777;
+}
+
+
+
+
+/* Navbar styling */
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 22px 0px;
+}
+
+.nav-logo {
+    height: 3rem;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-li {
+    padding: 0px 2rem;
+}
+
+.nav-li-a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-li-a:hover {
+    color: blue;
+}
+
+.active {
+    font-weight: bolder;
+    color: blue;
+}
+
+/* General section */
+.center-div {
+    margin: auto;
+    width: 50% !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.show{
+    display: block !;
+}
+
+.background{
+    background-image: url('../image/19366.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Homepage section */
+
+
+
+/* About section */
+
+#about h2 {
+    text-decoration: underline;
+    padding: 1px;
+}
+
+.about-outline-box {
+    gap: 5rem;
+    justify-content: center;
+    margin: 22px 1px;
+}
+
+.box-shape{
+    padding: 26px;
+    font-size: 4rem;
+}
+
+
+
+
